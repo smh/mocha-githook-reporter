@@ -1,0 +1,14 @@
+{
+  "ecmascript": 6,
+  "loadEagerly": [
+    "index.js"
+  ],
+  "libs": [
+    "node",
+    "ecmascript"
+  ],
+  "plugins": {
+    "node": {
+    }
+  }
+}
