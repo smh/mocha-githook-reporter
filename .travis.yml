@@ -1,5 +1,13 @@
 language: node_js
 node_js:
-  - '7'
-  - '6'
+- '7'
+- '6'
 sudo: false
+deploy:
+  provider: npm
+  email: stein@hustad.com
+  api_key:
+    secure: sSjn0jHOS4zEFT1wEwoCuAKLVD77mlCZWGCRfPe+dQwIg/nsUf8SGg6JkkCn0L45b4PQgP17kUEdPLWfmlOLKjZPaN5IgnNyrSh99acaRlJqImuiE9gQ90/sUtnKHqCmXZdDykLtFA6wyoSscOJlZCh+H1ooLWYCmXBNY3ZF5yyNiyBvgCUaDDxFrzCw5mCP+qtjqsDiJEPI6DC46c+ZeHiloTUtb1xttsTU+ctx3QHmLArnwsQt62qO2lmK9SnL/CdbihUc1np53Nbm80D24clDIXkPFnHqNRBK1IiJDclBsIGae9ecTA2xfqI87D1OUXK+nay2AdyNIZCVWEXJ6szivursDIyIUQxtfg7oDBgkEqLFZuYlHsTxvMy8nteHgnGxHCvKlMn5p+5KF+/KEqQ37MiZ1J6dXsPHuzSRiLlN7SyXMYDQhHIcUVc7Sv59ZOHVgUOKMIqHUStjZl++IA09rXjFr13dpdWDqWVHoUU0mrus0+0VzE0yww1LWhIsHoOz2TvC74S7jY216wl8zF77guEGQmIgSUPPph45s03x3x6rj/qhrAzvbK6Svs7chCURLaxwq2yBsymcXfyNJIrhTM2XsU+pq7tNfflUc5lSSv02m+9rXljdNFp/E785WPlfEbfnFF+OOLyQzhDlAYYaGryQ8khzxLxeqXB6cQY=
+  on:
+    tags: true
+    repo: smh/mocha-githook-reporter
