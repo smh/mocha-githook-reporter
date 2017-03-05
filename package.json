@@ -1,0 +1,34 @@
+{
+  "name": "mocha-githook-reporter",
+  "version": "1.0.0",
+  "description": "Mocha reporter for use with git hooks",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/smh/mocha-githook-reporter.git"
+  },
+  "keywords": [
+    "mocha",
+    "reporter",
+    "test",
+    "git",
+    "hook",
+    "hooks",
+    "pre-commit",
+    "precommit",
+    "pre-push",
+    "prepush",
+    "husky"
+  ],
+  "author": "Stein Martin Hustad <stein@hustad.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smh/mocha-githook-reporter/issues"
+  },
+  "homepage": "https://github.com/smh/mocha-githook-reporter",
+  "peerDependencies": {
+    "mocha": "^3 || ^2.2.5"
+  }
+}
