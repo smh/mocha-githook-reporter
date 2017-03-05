@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "precommit": "eslint . && mocha --reporter index.js",
+    "prepush": "eslint . && mocha --reporter index.js"
   },
   "eslintConfig": {
     "extends": "airbnb-base",
@@ -44,6 +46,7 @@
     "eslint": "^3.17.0",
     "eslint-config-airbnb-base": "^11.1.1",
     "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.13.2",
     "mocha": "^3.2.0",
     "shelljs": "^0.7.6"
   }
