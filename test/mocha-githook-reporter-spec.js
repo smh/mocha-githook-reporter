@@ -1,7 +1,9 @@
+/* eslint-env mocha */
+/* eslint-disable no-unused-expressions */
 const { expect } = require('chai');
 const shelljs = require('shelljs');
 
-const runTest = (test) =>
+const runTest = test =>
   shelljs.exec(`./node_modules/mocha/bin/mocha  --reporter index test/mock-tests/${test}`, { silent: true }).stdout;
 
 describe('mocha githook reporter', () => {
