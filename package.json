@@ -1,6 +1,6 @@
 {
   "name": "mocha-githook-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mocha reporter for use with git hooks",
   "main": "index.js",
   "scripts": {
